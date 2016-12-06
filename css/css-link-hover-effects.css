@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body * {
+    text-align: left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #444;
+}
+
+a.fade,
+a.slideLeft,
+a.slideRight,
+a.slideDown,
+a.slideUp {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: inline-block;
+}
+
+a.fade>div,
+a.slideLeft>div,
+a.slideRight>div,
+a.slideDown>div,
+a.slideUp>div {
+    display: inline;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.3s ease-in;
+    text-align: center;
+}
+
+a.fade>div:first-child,
+a.slideLeft>div:first-child,
+a.slideRight>div:first-child,
+a.slideDown>div:first-child,
+a.slideUp>div:first-child {
+    position: absolute;
+    float: left;
+    z-index: 0;
+}
+
+a.fade>div:last-child,
+a.slideLeft>div:last-child,
+a.slideRight>div:last-child,
+a.slideDown>div:last-child,
+a.slideUp>div:last-child {
+    z-index: 1;
+    position: relative;
+    float: left;
+    background-color: #ffaaaa;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    box-shadow: 1px 1px 3px 1px rgba(00, 0, 0, 0.2);
+}
+
+a.fade:hover,
+a.slideLeft:hover,
+a.slideRight:hover,
+a.slideDown:hover,
+a.slideUp:hover {
+    box-shadow: inset 0px 0px 3px 1px rgba(00, 0, 0, 0.2);
+}
+
+a.fade:hover>div:last-child {
+    opacity: 0;
+}
+
+
+/* ---  */
+
+a.slideLeft:hover>div:last-child {
+    left: -101%;
+}
+
+
+/* --- */
+
+a.slideRight:hover>div:last-child {
+    left: 101%;
+}
+
+a.slideUp:hover>div:last-child {
+    top: -50px;
+}
+
+
+/* --- */
+
+a.slideDown:hover>div:last-child {
+    top: 50px;
+}
