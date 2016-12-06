@@ -3,4 +3,4 @@ Different Link hover effects with pure CSS
 
 There nothing much here, the demo will speak for itself.
 
-[View demo](https://jo-geek-.io/css-link-hover-effects/)
+<a href = "https://jo-geek-.io/css-link-hover-effects/" target="_blank">View demo</a>
